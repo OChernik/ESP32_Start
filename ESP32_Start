@@ -58,9 +58,9 @@ void setup() {
       else if (error == OTA_END_ERROR) Serial.println("End Failed");
     });
 
-  ArduinoOTA.setHostname(otaHostname);
-  ArduinoOTA.setPassword(otaPass);
-  ArduinoOTA.begin();
+  ArduinoOTA.setHostname(otaHostname);    // задали видимое в сети имя контроллера
+  ArduinoOTA.setPassword(otaPass);        // задали пароль для загрузки скетча по воздуху
+  ArduinoOTA.begin();                     // запустили модуль ArduinoOTA
 
 }  // end void Setup()
 
